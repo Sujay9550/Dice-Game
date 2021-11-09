@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dice Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item item1">
+        <div class="player player--0 player--active">
+          <h2 class="name" id="name--0">Player 1</h2>
+          <p class="score" id="score--0">43</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="item item2">
+        <img src="img/dice-5.png" alt="Playing dice" class="dice" />
+      </div>
+      <div class="item item3">
+        <div class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <p class="score" id="score--1">24</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="item item4">
+        <button class="btn btn--new">
+          <i class="fas fa-sync-alt"></i> New game
+        </button>
+      </div>
+      <div class="item item5">
+        <button class="btn btn--roll">
+          <i class="fas fa-dice"></i> Roll dice
+        </button>
+      </div>
+      <div class="item item6">
+        <button class="btn btn--hold">
+          <i class="fas fa-pause-circle"></i> Hold
+        </button>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
